@@ -1,0 +1,87 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555; /* Changement de couleur au survol */
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    margin: 20px;
+    gap: 20px; /* Espace entre les éléments */
+}
+
+section {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+/* Lien Passer au contenu principal */
+.skip-link {
+    position: absolute;
+    top: -40px; /* Masqué par défaut */
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 10px; /* Visible lors de la mise au point */
+}
+
+/* Style des images */
+img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    padding: 5px;
+    border-radius: 10px; /* Coins arrondis */
+}
+
+/* Utilisation de nth-child */
+.gallery img:nth-child(odd) {
+    border-radius: 15px; /* Différent pour les images impaires */
+}
